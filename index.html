@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SI 3d API test</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link type="text/css" href="examples.css" rel="stylesheet" />
+    <link type="text/css" href="docs.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/njr2dak.css">
+
+
+    
+    <!-- import the webpage's javascript file -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+  </head> 
+
+
+
+<body>
+
+    <div class="examples-container-front">
+        <model-viewer bounds="tight" src="NeilArmstrong (1).glb" ar ar-modes="webxr scene-viewer quick-look" interaction-prompt="none" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="1" auto-rotate disable-zoom=true>
+         <div id="title"> <h1>SPACE</h1> 
+         <style>
+             h1{
+                 color: Black;
+                 font-family: nasalization, sans-serif;
+                 font-weight: 400;
+                 font-style: normal;
+             }
+         </style></div>
+        </model-viewer>
+                <style>
+            *{
+            margin:0;
+            padding:0;
+            }
+            html{
+            height: 100%;
+            width: 100%;
+            }
+            body {
+              height: 100%;
+              width: 100%;
+            }
+            model-viewer{
+            height:100%;
+            width:100%;
+            }
+    
+            
+        </style>
+
+    </div>
+
+<!-- <div class="examples-page">
+  <div class="sidebar" id="sidenav">
+Testing out the navbar
+
+</div> -->
+  <!-- <div id="toggle"></div> -->
+
+  <!-- <div class="examples-container">
+    <model-viewer id="toggle-model" src="SShuttle_Exterior_2019_CLI_TIF_Model_12-150k-4096-high.glb" alt="A 3D model of a shishkebab" shadow-intensity="1" camera-controls auto-rotate></model-viewer>
+    <script>
+        const models = ['SShuttle_Exterior_2019_CLI_TIF_Model_12-150k-4096-high.glb', 'https://3d-api.si.edu/content/document/d8c636ce-4ebc-11ea-b77f-2e728ce88125/SShuttle_Exterior_2019_CLI_TIF_Model_12-150k-4096-high.glb'];
+        const toggleModel = document.querySelector('#toggle-model');
+        let j = 0;
+        setInterval(() => toggleModel.setAttribute('src', `../../shared-assets/models/${models[j++ % 2]}`), 5000);
+    </script> -->
+
+<div class="sample">
+
+    <div id="glbModel" class="demo">
+        <model-viewer camera-controls
+        alt="A 3D model of an astronaut" src="https://3d-api.si.edu/content/document/3d_package:d8c62e5e-4ebc-11ea-b77f-2e728ce88125/wright_flyer_wings_mesh-49k-1024-low.glb">
+        <button class="Hotspot" slot="hotspot-1" data-position="-487.54533853139384m 127.61151885399312m 18.673843673867168m" data-normal="-0.11352398104213945m 0.992305873635499m 0.04941010905506354m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">This wing panel is the largest surviving  <br>piece of original fabricfrom the 1903 Wright Flyer,  <br>with a wingspan of 40 feet 4 inches </div>
+            
+        </button>
+
+    </model-viewer>
+    </div>
+    <div class="content">
+      <div class="wrapper">
+        <div class="heading">
+            
+          <h2 class="demo-title">1903: The Wright Flyer</h2>
+          <h4>
+
+            The Wright brothers inaugurated the aerial age with the world's first successful flights of a powered heavier-than-air flying machine. The Wright Flyer was the product of a sophisticated four-year program of research and development conducted by Wilbur and Orville Wright beginning in 1899. After building and testing three full-sized gliders, the Wrights' first powered airplane flew at Kitty Hawk, North Carolina, on December 17, 1903, making a 12-second flight, traveling 36 m (120 ft), with Orville piloting. The best flight of the day, with Wilbur at the controls, covered 255.6 m (852 ft) in 59 seconds.
+            
+
+          </h4>
+        </div>
+          <template>
+          </template>
+        </example-snippet>
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <div class="sample">
+
+        <div id="glbModel" class="demo">
+            <model-viewer camera-controls
+            alt="A 3D model of an astronaut" src="https://3d-api.si.edu/content/document/3d_package:6c69a6bb-55e6-4356-8725-120ff7f8d652/p0-Part_01-100k-1024.glb">
+        </model-viewer>
+        </div>
+        <div class="content">
+          <div class="wrapper">
+            <div class="heading">
+                
+              <h2 class="demo-title">1947: The Bell X-1</h2>
+              <h4>
+                Designed exclusively for research, the X-1 had thin, unswept wings and a fuselage modeled after a .50-inch bullet. Its length was 9.4 metres (31 feet) and its wingspan 8.5 metres (28 feet).
+                It was powered by a liquid-fueled rocket engine designed, built, and tested by American engineer James Hart Wyld. 
+
+
+                On October 14, 1947, the Bell X-1 became the first airplane to fly faster than the speed of sound. Piloted by U.S. Air Force Capt. Charles E. "Chuck" Yeager, the X-1 reached a speed of 1,127 kilometers (700 miles) per hour, Mach 1.06, at an altitude of 13,000 meters (43,000 feet). Yeager named the airplane "Glamorous Glennis" in tribute to his wife.
+Air-launched at an altitude of 7,000 meters (23,000 feet) from the bomb bay of a Boeing B-29, the X-1 used its rocket engine to climb to its test altitude. It flew a total of 78 times, and on March 26, 1948, with Yeager at the controls, it attained a speed of 1,540 kilometers (957 miles) per hour, Mach 1.45, at an altitude of 21,900 meters (71,900 feet). This was the highest velocity and altitude reached by a manned airplane up to that time.
+<img src="BellX1.jpeg" height="150" width="300" />
+<img src="BellX1.jpeg" height="150" width="300" />
+<img src="BellX1.jpeg" height="150" width="300" />
+
+              </h4>
+            </div>
+              <template>
+              </template>
+            </example-snippet>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sample">
+
+        <div id="glbModel" class="demo">
+            <model-viewer camera-controls
+            alt="A 3D model of an astronaut" src="apollo_exterior-150k-4096-gltf/apollo_exterior-150k-4096.gltf">
+        </model-viewer>
+        </div>
+        <div class="content">
+          <div class="wrapper">
+            <div class="heading">
+                
+              <h2 class="demo-title">1969: The Apollo 11 Command Module</h2>
+              <h4>
+
+                The Apollo 11 Command Module, "Columbia," was the living quarters for the three-person crew during most of the first crewed lunar landing mission in July 1969. On July 16, 1969, Neil Armstrong, Edwin "Buzz" Aldrin and Michael Collins were launched from Cape Kennedy atop a Saturn V rocket. This Command Module, no. 107, manufactured by North American Rockwell, was one of three parts of the complete Apollo spacecraft. The other two parts were the Service Module and the Lunar Module, nicknamed "Eagle." The Service Module contained the main spacecraft propulsion system and consumables while the Lunar Module was the two-person craft used by Armstrong and Aldrin to descend to the Moon's surface on July 20. The Command Module is the only portion of the spacecraft to return to Earth.
+              </h4>
+            </div>
+              <template>
+              </template>
+            </example-snippet>
+          </div>
+        </div>
+      </div>
+  
+
+      <div class="sample">
+
+        <div id="glbModel" class="demo">
+            <model-viewer camera-controls
+            alt="A 3D model of an astronaut" src="https://3d-api.si.edu/content/document/3d_package:d8c63e8a-4ebc-11ea-b77f-2e728ce88125/x3d-cm-interior-hull-uvs-150k-1024-low.glb">
+        </model-viewer>
+        
+        </div>
+        <div class="content">
+          <div class="wrapper">
+            <div class="heading">
+                
+              <h2 class="demo-title">Inside The Apollo 11 Command Module</h2>
+              <h4>
+
+                The Apollo 11 Command Module, "Columbia," was the living quarters for the three-person crew during most of the first crewed lunar landing mission in July 1969. On July 16, 1969, Neil Armstrong, Edwin "Buzz" Aldrin and Michael Collins were launched from Cape Kennedy atop a Saturn V rocket. This Command Module, no. 107, manufactured by North American Rockwell, was one of three parts of the complete Apollo spacecraft. The other two parts were the Service Module and the Lunar Module, nicknamed "Eagle." The Service Module contained the main spacecraft propulsion system and consumables while the Lunar Module was the two-person craft used by Armstrong and Aldrin to descend to the Moon's surface on July 20. The Command Module is the only portion of the spacecraft to return to Earth.
+              </h4>
+            </div>
+            <div class="heading">
+                
+                <h2 class="demo-title">The hatch</h2>
+                <h4>
+  
+                  The Apollo 11 Command Module, "Columbia," was the living quarters for the three-person crew during most of the first crewed lunar landing mission in July 1969. On July 16, 1969, Neil Armstrong, Edwin "Buzz" Aldrin and Michael Collins were launched from Cape Kennedy atop a Saturn V rocket. This Command Module, no. 107, manufactured by North American Rockwell, was one of three parts of the complete Apollo spacecraft. The other two parts were the Service Module and the Lunar Module, nicknamed "Eagle." The Service Module contained the main spacecraft propulsion system and consumables while the Lunar Module was the two-person craft used by Armstrong and Aldrin to descend to the Moon's surface on July 20. The Command Module is the only portion of the spacecraft to return to Earth.
+                </h4>
+                <model-viewer camera-controls
+                alt="A 3D model of an astronaut" src="https://3d-api.si.edu/content/document/3d_package:e7514eea-3f12-490d-a2d0-999f2a1a70f7/apollo-11-command-module-hatch-150k-1024-low.glb">
+            </model-viewer>
+              </div>
+              <template>
+              </template>
+            </example-snippet>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="sample">
+
+        <div id="glbModel" class="demo">
+            <model-viewer src="https://3d-api.si.edu/content/document/3d_package:d8c63e8a-4ebc-11ea-b77f-2e728ce88125/x3d-cm-interior-hull-uvs-150k-1024-low.glb"  shadow-intensity="1" ar ar-modes="webxr scene-viewer quick-look" camera-controls alt="A 3D model carousel">
+  
+
+                <div class="slider">
+                  <div class="slides">
+                    <button class="slide selected" onclick="switchSrc(this, 'x3d-cm-interior-hull-uvs-150k-1024-low.glb')" style="background-image: url('moon.jpeg');">
+              
+                    </button><button class="slide" onclick="switchSrc(this, 'x3d-cm-interior-seats-uvs-150k-1024-low.glb')" style="background-image: url('moon.jpeg');">
+              
+                    </button><button class="slide" onclick="switchSrc(this, 'x3d-cm-interior-panel-uvs-150k-1024-low.glb')" style="background-image: url('moon.jpeg');">
+                    
+                    </button><button class="slide" onclick="switchSrc(this, 'x3d-cm-interior-graffiti-uvs-150k-512-low.glb')" style="background-image: url('moon.jpeg');">
+                    
+                    <!-- </button><button class="slide" onclick="switchSrc(this, 'Canoe')" style="background-image: url('../../assets/ShopifyModels/Canoe.png');">     -->
+                  </button></div>
+                </div>
+              </model-viewer>
+              
+              <script type="module">
+                const modelViewer = document.querySelector("model-viewer");
+              
+                window.switchSrc = (element, name) => {
+                  const base = "https://3d-api.si.edu/content/document/3d_package:d8c63e8a-4ebc-11ea-b77f-2e728ce88125/" + name;
+                  modelViewer.src = base;
+                //   modelViewer.poster = base + '.png';
+                  const slides = document.querySelectorAll(".slide");
+                  slides.forEach((element) => {element.classList.remove("selected");});
+                  element.classList.add("selected");
+                };
+              
+                document.querySelector(".slider").addEventListener('beforexrselect', (ev) => {
+                  // Keep slider interactions from affecting the XR scene.
+                  ev.preventDefault();
+                });
+              </script>
+              
+              <style>
+                /* This keeps child nodes hidden while the element loads */
+                :not(:defined) > * {
+                  display: none;
+                }
+              
+                model-viewer {
+                  background-color: #eee;
+                  overflow-x: hidden;
+                  --poster-color: #eee;
+                }
+              
+                #ar-button {
+                  background-image: url(../../assets/ic_view_in_ar_new_googblue_48dp.png);
+                  background-repeat: no-repeat;
+                  background-size: 20px 20px;
+                  background-position: 12px 50%;
+                  background-color: #fff;
+                  position: absolute;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  white-space: nowrap;
+                  bottom: 132px;
+                  padding: 0px 16px 0px 40px;
+                  font-family: Roboto Regular, Helvetica Neue, sans-serif;
+                  font-size: 14px;
+                  color:#4285f4;
+                  height: 36px;
+                  line-height: 36px;
+                  border-radius: 18px;
+                  border: 1px solid #DADCE0;
+                }
+              
+                #ar-button:active {
+                  background-color: #E8EAED;
+                }
+              
+                #ar-button:focus {
+                  outline: none;
+                }
+              
+                #ar-button:focus-visible {
+                  outline: 1px solid #4285f4;
+                }
+              
+                @keyframes circle {
+                  from { transform: translateX(-50%) rotate(0deg) translateX(50px) rotate(0deg); }
+                  to   { transform: translateX(-50%) rotate(360deg) translateX(50px) rotate(-360deg); }
+                }
+              
+                @keyframes elongate {
+                  from { transform: translateX(100px); }
+                  to   { transform: translateX(-100px); }
+                }
+              
+                model-viewer > #ar-prompt {
+                  position: absolute;
+                  left: 50%;
+                  bottom: 175px;
+                  animation: elongate 2s infinite ease-in-out alternate;
+                  display: none;
+                }
+              
+                model-viewer[ar-status="session-started"] > #ar-prompt {
+                  display: block;
+                }
+              
+                model-viewer > #ar-prompt > img {
+                  animation: circle 4s linear infinite;
+                }
+              
+                model-viewer > #ar-failure {
+                  position: absolute;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  bottom: 175px;
+                  display: none;
+                }
+              
+                model-viewer[ar-tracking="not-tracking"] > #ar-failure {
+                  display: block;
+                }
+              
+                .slider {
+                  width: 100%;
+                  text-align: center;
+                  overflow: hidden;
+                  position: absolute;
+                  bottom: 16px;
+                }
+              
+                .slides {
+                  display: flex;
+                  overflow-x: auto;
+                  scroll-snap-type: x mandatory;
+                  scroll-behavior: smooth;
+                  -webkit-overflow-scrolling: touch;
+                }
+              
+                .slide {
+                  scroll-snap-align: start;
+                  flex-shrink: 0;
+                  width: 100px;
+                  height: 100px;
+                  background-size: contain;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  background-color: #fff;
+                  margin-right: 10px;
+                  border-radius: 10px;
+                  border: none;
+                  display: flex;
+                }
+              
+                .slide.selected {
+                  border: 2px solid #4285f4;
+                }
+              
+                .slide:focus {
+                  outline: none;
+                }
+              
+                .slide:focus-visible {
+                  outline: 1px solid #4285f4;
+                }
+              
+              </style>
+        
+        </div>
+        <div class="content">
+          <div class="wrapper">
+            <div class="heading">
+                
+              <h2 class="demo-title">Inside The Apollo 11 Command Module</h2>
+              <h4>
+
+                The Apollo 11 Command Module, "Columbia," was the living quarters for the three-person crew during most of the first crewed lunar landing mission in July 1969. On July 16, 1969, Neil Armstrong, Edwin "Buzz" Aldrin and Michael Collins were launched from Cape Kennedy atop a Saturn V rocket. This Command Module, no. 107, manufactured by North American Rockwell, was one of three parts of the complete Apollo spacecraft. The other two parts were the Service Module and the Lunar Module, nicknamed "Eagle." The Service Module contained the main spacecraft propulsion system and consumables while the Lunar Module was the two-person craft used by Armstrong and Aldrin to descend to the Moon's surface on July 20. The Command Module is the only portion of the spacecraft to return to Earth.
+              </h4>
+            </div>
+            <div class="heading">
+                
+                <h2 class="demo-title">The hatch</h2>
+                <h4>
+  
+                  The Apollo 11 Command Module, "Columbia," was the living quarters for the three-person crew during most of the first crewed lunar landing mission in July 1969. On July 16, 1969, Neil Armstrong, Edwin "Buzz" Aldrin and Michael Collins were launched from Cape Kennedy atop a Saturn V rocket. This Command Module, no. 107, manufactured by North American Rockwell, was one of three parts of the complete Apollo spacecraft. The other two parts were the Service Module and the Lunar Module, nicknamed "Eagle." The Service Module contained the main spacecraft propulsion system and consumables while the Lunar Module was the two-person craft used by Armstrong and Aldrin to descend to the Moon's surface on July 20. The Command Module is the only portion of the spacecraft to return to Earth.
+                </h4>
+                <model-viewer camera-controls
+                alt="A 3D model of an astronaut" src="https://3d-api.si.edu/content/document/3d_package:e7514eea-3f12-490d-a2d0-999f2a1a70f7/apollo-11-command-module-hatch-150k-1024-low.glb">
+            </model-viewer>
+              </div>
+              <template>
+              </template>
+            </example-snippet>
+          </div>
+        </div>
+      </div>
+  
+
+      <div class="sample">
+
+        <div id="glbModel" class="demo">
+            <model-viewer camera-controls
+            alt="A 3D model of an astronaut" src="NeilArmstrong (1).glb">
+            <button class="Hotspot" slot="hotspot-1" data-position="-0.22187384163125548m 1.4727495678307192m 0.08158001329323561m" data-normal="0.019782581546794707m 0.47005599472703635m 0.8824148748114579m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">On Earth, the suit weight a <br>whopping 190 lbs.
+                    On the moon however, <br> it was only about 28 lbs.</div>
+            </button>
+        </model-viewer>
+        </div>
+        <div class="content">
+          <div class="wrapper">
+            <div class="heading">
+                
+              <h2 class="demo-title">1969: Neil Armstrongs Spacesuit</h2>
+              <h4>
+
+                This spacesuit was worn by astronaut Neil Armstrong, Commander of the Apollo 11 mission, which landed the first man on the Moon on July 20, 1969.
+                The lunar spacesuits were designed to provide a life sustaining environment for the astronaut during periods of extra vehicular activity or during unpressurized spacecraft operation. They permitted maximum mobility and were designed to be worn with relative comfort for up to 115 hours in conjunction with the liquid cooling garment. If necessary, they were also capable of being worn for 14 days in an unpressurized mode.
+                The spacesuit has the designation A-7L, and was constructed in the Extra-vehicular or EV configuration.              </h4>
+            </div>
+            <div class="heading">
+                
+                <h2 class="demo-title">The Gloves</h2>
+                <h4>
+  
+                    These Extra-Vehicular (EV) gloves were made for and worn by astronaut Neil Armstrong, Commander of the Apollo 11 mission in July, 1969.
+                    The gloves were constructed of an outer shell of Chromel-R fabric with thermal insulation to provide protection while handling extremely hot or cold objects. The blue fingertips were made of silicone rubber to provide sensitivity. The inner glove was of a rubber/neoprene compound, into which the restraint system was integrated, and they attached to the spacesuit using the same mechanism as the intra-vehicular gloves.                </h4>
+                <model-viewer camera-controls
+                alt="A 3D model of an astronaut" src="https://3d-api.si.edu/content/document/3d_package:6c69a6bb-55e6-4356-8725-120ff7f8d652/p0-Part_01-100k-1024.glb">
+            </model-viewer>
+              </div>
+              <template>
+              </template>
+            </example-snippet>
+          </div>
+        </div>
+      </div>
+  
+
+      <div class="sample">
+
+        <div id="glbModel" class="demo">
+            <model-viewer camera-controls
+            alt="A 3D model of an astronaut" src="https://3d-api.si.edu/content/document/3d_package:d8c636ce-4ebc-11ea-b77f-2e728ce88125/SShuttle_Exterior_2019_CLI_TIF_Model_12-150k-1024-low.glb">
+        </model-viewer>
+        </div>
+        <div class="content">
+          <div class="wrapper">
+            <div class="heading">
+                
+              <h2 class="demo-title">1984: Discovery Space Shuttle</h2>
+              <h4>
+
+                Discovery was the third Space Shuttle orbiter vehic le to fly in space. It entered service in 1984 and retired from spaceflight as the oldest and most accomplished orbiter, the champion of the shuttle fleet. Discovery flew on 39 Earth-orbital missions, spent a total of 365 days in space, and traveled almost 240 million kilometers (150 million miles)--more than the other orbiters. It shuttled 184 men and women into space and back, many of whom flew more than once, for a record-setting total crew count of 251.
+                Because Discovery flew every kind of mission the Space Shuttle was meant to fly, it embodies well the 30-year history of U.S. human spaceflight from 1981 to 2011. Named for renowned sailing ships of exploration, Discovery is preserved as intact as possible as it last flew in 2011 on the 133rd Space Shuttle mission.              </h4>
+            </div>
+              <template>
+              </template>
+            </example-snippet>
+          </div>
+        </div>
+      </div>
+  
+
+      <div class="sample">
+
+        <div id="glbModel" class="demo">
+            <model-viewer camera-controls
+            alt="A 3D model of an astronaut" src="chandra-150k-std.glb">
+            <button class="Hotspot" slot="hotspot-1" data-position="-5.750318408568511m 0.46774581975915996m -10.778109102195469m" data-normal="-0.494359733655492m 0.8692101238390167m -0.009067213234094844m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">The worlds biggest and most powerful X-Ray telescope. <br> It has eight-times greater resolution and is able to detect sources <br>more than 20-times fainter than any previous X-ray telescope.</div>
+            </button>
+        </model-viewer>
+        </div>
+        <div class="content">
+          <div class="wrapper">
+            <div class="heading">
+                
+              <h2 class="demo-title">1991: Chandra X-ray Observatory</h2>
+              <h4>
+
+                NASA's Chandra X-ray Observatory is a telescope specially designed to detect X-ray emission from very hot regions of the Universe such as exploded stars, clusters of galaxies, and matter around black holes. Because X-rays are absorbed by Earth's atmosphere, Chandra must orbit above it, up to an altitude of 139,000 km (86,500 mi) in space.              </h4>
+            </div>
+              <template>
+              </template>
+            </example-snippet>
+          </div>
+        </div>
+      </div>
+  
+   
+    </div> -->
+<!-- 
+    <div class="sample">
+      <div id="glbModel" class="demo"></div>
+      <div class="content">
+        <div class="wrapper">
+          <div class="heading">
+            <h2 class="demo-title">With a GLB model</h2>
+            <h4></h4>
+          </div>
+          <example-snippet stamp-to="glbModel" highlight-as="html">
+            <template>
+<model-viewer camera-controls
+    alt="A 3D model of an astronaut" src="apollo_exterior-150k-4096.glb">
+</model-viewer>
+            </template>
+          </example-snippet>
+        </div>
+      </div>
+    </div>
+
+    <div class="sample">
+
+        <div id="glbModel" class="demo">
+            <model-viewer camera-controls
+            alt="A 3D model of an astronaut" src="https://3d-api.si.edu/content/document/d8c636ce-4ebc-11ea-b77f-2e728ce88125/SShuttle_Exterior_2019_CLI_TIF_Model_12-150k-4096-high.glb">
+        </model-viewer>
+        </div>
+        <div class="content">
+          <div class="wrapper">
+            <div class="heading">
+                
+              <h2 class="demo-title">With a GLB model</h2>
+              <h4></h4>
+            </div>
+            <example-snippet stamp-to="glbModel" highlight-as="html">
+                <model-viewer camera-controls
+                alt="A 3D model of an astronaut" src="https://3d-api.si.edu/content/document/d8c636ce-4ebc-11ea-b77f-2e728ce88125/SShuttle_Exterior_2019_CLI_TIF_Model_12-150k-4096-high.glb">
+            </model-viewer>
+              <template>
+              </template>
+            </example-snippet>
+          </div>
+        </div>
+      </div>
+
+      <div class="sample">
+
+        <div id="glbModel" class="demo">
+            <model-viewer camera-controls
+            alt="A 3D model of an astronaut" src="https://3d-api.si.edu/content/document/d8c636ce-4ebc-11ea-b77f-2e728ce88125/SShuttle_Exterior_2019_CLI_TIF_Model_12-150k-4096-high.glb">
+        </model-viewer>
+        </div>
+        <div class="content">
+          <div class="wrapper">
+            <div class="heading">
+                
+              <h2 class="demo-title">With a GLB model</h2>
+              <h4></h4>
+            </div>
+            <example-snippet stamp-to="glbModel" highlight-as="html">
+                <model-viewer camera-controls
+                alt="A 3D model of an astronaut" src="https://3d-api.si.edu/content/document/d8c636ce-4ebc-11ea-b77f-2e728ce88125/SShuttle_Exterior_2019_CLI_TIF_Model_12-150k-4096-high.glb">
+            </model-viewer>
+              <template>
+              </template>
+            </example-snippet>
+          </div>
+        </div>
+      </div>
+
+      <div class="sample">
+
+        <div id="glbModel" class="demo">
+            <model-viewer camera-controls
+            alt="A 3D model of an astronaut" src="https://3d-api.si.edu/content/document/d8c636ce-4ebc-11ea-b77f-2e728ce88125/SShuttle_Exterior_2019_CLI_TIF_Model_12-150k-4096-high.glb">
+        </model-viewer>
+        </div>
+        <div class="content">
+          <div class="wrapper">
+            <div class="heading">
+                
+              <h2 class="demo-title">With a GLB model</h2>
+              <h4></h4>
+            </div>
+            <example-snippet stamp-to="glbModel" highlight-as="html">
+                <model-viewer camera-controls
+                alt="A 3D model of an astronaut" src="https://3d-api.si.edu/content/document/d8c636ce-4ebc-11ea-b77f-2e728ce88125/SShuttle_Exterior_2019_CLI_TIF_Model_12-150k-4096-high.glb">
+            </model-viewer>
+              <template>
+              </template>
+            </example-snippet>
+          </div>
+        </div>
+      </div>
+
+      <div class="sample">
+
+        <div id="glbModel" class="demo">
+            <model-viewer camera-controls
+            alt="A 3D model of an astronaut" src="https://3d-api.si.edu/content/document/d8c636ce-4ebc-11ea-b77f-2e728ce88125/SShuttle_Exterior_2019_CLI_TIF_Model_12-150k-4096-high.glb">
+        </model-viewer>
+        </div>
+        <div class="content">
+          <div class="wrapper">
+            <div class="heading">
+                
+              <h2 class="demo-title">With a GLB model</h2>
+              <h4></h4>
+            </div>
+            <example-snippet stamp-to="glbModel" highlight-as="html">
+                <model-viewer camera-controls
+                alt="A 3D model of an astronaut" src="https://3d-api.si.edu/content/document/d8c636ce-4ebc-11ea-b77f-2e728ce88125/SShuttle_Exterior_2019_CLI_TIF_Model_12-150k-4096-high.glb">
+            </model-viewer>
+              <template>
+              </template>
+            </example-snippet>
+          </div>
+        </div>
+      </div>
+
+      <div class="sample">
+
+        <div id="glbModel" class="demo">
+            <model-viewer camera-controls
+            alt="A 3D model of an astronaut" src="https://3d-api.si.edu/content/document/d8c636ce-4ebc-11ea-b77f-2e728ce88125/SShuttle_Exterior_2019_CLI_TIF_Model_12-150k-4096-high.glb">
+        </model-viewer>
+        </div>
+        <div class="content">
+          <div class="wrapper">
+            <div class="heading">
+                
+              <h2 class="demo-title">With a GLB model</h2>
+              <h4></h4>
+            </div>
+            <example-snippet stamp-to="glbModel" highlight-as="html">
+                <model-viewer camera-controls
+                alt="A 3D model of an astronaut" src="https://3d-api.si.edu/content/document/d8c636ce-4ebc-11ea-b77f-2e728ce88125/SShuttle_Exterior_2019_CLI_TIF_Model_12-150k-4096-high.glb">
+            </model-viewer>
+              <template>
+              </template>
+            </example-snippet>
+          </div>
+        </div>
+      </div> -->
+
+</div>
+</div> -->
+</div>
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+</body>
+
+</html>
