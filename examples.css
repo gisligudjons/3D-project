@@ -52,6 +52,7 @@ font-size: 100;
  }
  
  .examples-container {
+    margin-top: 20px;
    margin-left: 20px;
    transition-property: margin-left;
    transition: var(--sidebar-speed);
@@ -59,6 +60,7 @@ font-size: 100;
  }
  
  .examples-container-front {
+    margin-top: 20px;
     margin-left: 20px;
     height: 100%;
     width: 100%;
@@ -119,6 +121,10 @@ font-size: 100;
    font-weight: 400;
    -webkit-font-smoothing: antialiased;
    background-color: #FC3D21;
+   color: #000000;
+   font-weight: 500;
+   text-shadow: 1px 1px 1px #fff;
+   text-align: center;
  }
 
 img {
@@ -218,43 +224,7 @@ img:hover {
    width: 24px;
    height: 24px;
  }
- .logo-chrome {
-   content: url("https://github.com/alrra/browser-logos/raw/master/src/chrome/chrome_48x48.png");
- }
- .logo-canary {
-   content: url("https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome-canary/chrome-canary_48x48.png");
- }
- .logo-safari {
-   content: url("https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png");
- }
- .logo-firefox {
-   content: url("https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png");
- }
- .logo-edge {
-   content: url("https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png");
- }
- .logo-ie {
-   content: url("https://raw.githubusercontent.com/alrra/browser-logos/master/src/archive/internet-explorer_9-11/internet-explorer_9-11_48x48.png");
- }
- .logo-samsung {
-   content: url("https://raw.githubusercontent.com/alrra/browser-logos/master/src/samsung-internet/samsung-internet_48x48.png");
- }
- .icon-check {
-   opacity: .6;
-   content: url("https://www.gstatic.com/images/icons/material/system/2x/done_black_24dp.png");
- }
- .icon-warning {
-   opacity: .6;
-   content: url("https://www.gstatic.com/images/icons/material/system/2x/assignment_turned_in_black_24dp.png");
- }
- .icon-na {
-   opacity: .6;
-   content: url("https://www.gstatic.com/images/icons/material/system/2x/not_interested_black_24dp.png");
- }
- .icon-flag {
-   opacity: .5;
-   content: url("https://www.gstatic.com/images/icons/material/system/2x/flag_black_24dp.png");
- }
+ 
  
  h1, h2, h3, h4 {
    font-weight: 400;
@@ -266,6 +236,9 @@ img:hover {
    line-height: 1.24em;
    margin-bottom: .12em;
    margin-top: 0;
+   font-size: 6vw;
+   line-height: 1.2;
+   margin: 0;
  }
  h2 {
    font-size: 1.72em;
@@ -332,6 +305,7 @@ img:hover {
  }
  
  .sample {
+    margin-left: 20px;
    display: grid;
    position: relative;
    background: white;
@@ -823,4 +797,15 @@ img:hover {
        max-width: 50vw;
    }
  }
+
+ .HotspotAnnotation{
+    background-color: #e9e9e9;
+    /* position: absolute; */
+    /* transform: translate(30px, 30px); */
+    border-radius: 3px;
+    padding: 3px;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
  

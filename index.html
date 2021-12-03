@@ -9,13 +9,22 @@
     <!-- import the webpage's stylesheet -->
     <link type="text/css" href="examples.css" rel="stylesheet" />
     <link type="text/css" href="docs.css" rel="stylesheet" />
+    <link type="text/css" href="modal.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.typekit.net/njr2dak.css">
+    
+    
 
 
     
     <!-- import the webpage's javascript file -->
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <script src="modal.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head> 
 
 
@@ -24,14 +33,41 @@
 
     <div class="examples-container-front">
         <model-viewer bounds="tight" src="NeilArmstrong (1).glb" ar ar-modes="webxr scene-viewer quick-look" interaction-prompt="none" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="1" auto-rotate disable-zoom=true>
-         <div id="title"> <h1>SPACE</h1> 
+         <div id="title"> <h1 id="titleheader">SPACE</h1> 
+            <!-- <h4 id="subtitle">By utilizing the 3D objects available through the National Air and Space Musuem, I welcome you to explore air and space, and the history behind each objects.</h4> -->
          <style>
+             #titleheader{
+                 position: absolute;
+                 top: 13%;
+                 left: 7%;
+             }
+
+             #subtitle{
+                 display: block;
+                 width: 37%;
+                 position: absolute;
+                 top: 25%;
+                 left: 2%;
+             }
+
+
              h1{
                  color: Black;
                  font-family: nasalization, sans-serif;
-                 font-weight: 400;
+                 font-weight: 800;
                  font-style: normal;
              }
+
+
+             
+             h2{
+
+                 font-family: nasalization, sans-serif;
+ 
+                 font-style: normal;
+             }
+
+
          </style></div>
         </model-viewer>
                 <style>
@@ -79,7 +115,7 @@ Testing out the navbar
         <model-viewer camera-controls
         alt="A 3D model of an astronaut" src="https://3d-api.si.edu/content/document/3d_package:d8c62e5e-4ebc-11ea-b77f-2e728ce88125/wright_flyer_wings_mesh-49k-1024-low.glb">
         <button class="Hotspot" slot="hotspot-1" data-position="-487.54533853139384m 127.61151885399312m 18.673843673867168m" data-normal="-0.11352398104213945m 0.992305873635499m 0.04941010905506354m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation">This wing panel is the largest surviving  <br>piece of original fabricfrom the 1903 Wright Flyer,  <br>with a wingspan of 40 feet 4 inches </div>
+            <div class="HotspotAnnotation">This wing panel is the largest surviving piece of original fabricfrom the 1903 Wright Flyer, with a wingspan of 40 feet 4 inches </div>
             
         </button>
 
@@ -91,9 +127,76 @@ Testing out the navbar
             
           <h2 class="demo-title">1903: The Wright Flyer</h2>
           <h4>
+            
+            <div id="text">
 
             The Wright brothers inaugurated the aerial age with the world's first successful flights of a powered heavier-than-air flying machine. The Wright Flyer was the product of a sophisticated four-year program of research and development conducted by Wilbur and Orville Wright beginning in 1899. After building and testing three full-sized gliders, the Wrights' first powered airplane flew at Kitty Hawk, North Carolina, on December 17, 1903, making a 12-second flight, traveling 36 m (120 ft), with Orville piloting. The best flight of the day, with Wilbur at the controls, covered 255.6 m (852 ft) in 59 seconds.
-            
+
+            <div id="more"> The Wright brothers inaugurated the aerial age with the world's first successful flights of a powered heavier-than-air flying machine. The Wright Flyer was the product of a sophisticated four-year program of research and development conducted by Wilbur and Orville Wright beginning in 1899. After building and testing three full-sized gliders, the Wrights' first powered airplane flew at Kitty Hawk, North Carolina, on December 17, 1903, making a 12-second flight, traveling 36 m (120 ft), with Orville piloting. The best flight of the day, with Wilbur at the controls, covered 255.6 m (852 ft) in 59 seconds.ight beginning in 1899. After building and testing three full-sized gliders, the Wrights' first powered airplane flew at Kitty Hawk, North Carolina, on December 17, 1903, making a 12-second flight, traveling 36 m (120 ft), with Orville piloting. The best flight of the day, with Wilbur at the controls, covered 255.6 m (852 ft) in 59 secondsight beginning in 1899. After building and testing three full-sized gliders, the Wrights' first powered airplane flew at Kitty Hawk, North Carolina, on December 17, 1903, making a 12-second flight, traveling 36 m (120 ft), with Orville piloting. The best flight of the day, with Wilbur at the controls, covered 255.6 m (852 ft) in 59 secondsight beginning in 1899. After building and testing three full-sized gliders, the Wrights' first powered airplane flew at Kitty Hawk, North Carolina, on December 17, 1903, making a 12-second flight, traveling 36 m (120 ft), with Orville piloting. The best flight of the day, with Wilbur at the controls, covered 255.6 m (852 ft) in 59 secondsight beginning in 1899. After building and testing three full-sized gliders, the Wrights' first powered airplane flew at Kitty Hawk, North Carolina, on December 17, 1903, making a 12-second flight, traveling 36 m (120 ft), with Orville piloting. The best flight of the day, with Wilbur at the controls, covered 255.6 m (852 ft) in 59 secondsight beginning in 1899. After building and testing three full-sized gliders, the Wrights' first powered airplane flew at Kitty Hawk, North Carolina, on December 17, 1903, making a 12-second flight, traveling 36 m (120 ft), with Orville piloting. The best flight of the day, with Wilbur at the controls, covered 255.6 m (852 ft) in 59 secondsight beginning in 1899. After building and testing three full-sized gliders, the Wrights' first powered airplane flew at Kitty Hawk, North Carolina, on December 17, 1903, making a 12-second flight, traveling 36 m (120 ft), with Orville piloting. The best flight of the day, with Wilbur at the controls, covered 255.6 m (852 ft) in 59 secondsight beginning in 1899. After building and testing three full-sized gliders, the Wrights' first powered airplane flew at Kitty Hawk, North Carolina, on December 17, 1903, making a 12-second flight, traveling 36 m (120 ft), with Orville piloting. The best flight of the day, with Wilbur at the controls, covered 255.6 m (852 ft) in 59 secondsight beginning in 1899. After building and testing three full-sized gliders, the Wrights' first powered airplane flew at Kitty Hawk, North Carolina, on December 17, 1903, making a 12-second flight, traveling 36 m (120 ft), with Orville piloting. The best flight of the day, with Wilbur at the controls, covered 255.6 m (852 ft) in 59 secondsight beginning in 1899. After building and testing three full-sized gliders, the Wrights' first powered airplane flew at Kitty Hawk, North Carolina, on December 17, 1903, making a 12-second flight, traveling 36 m (120 ft), with Orville piloting. The best flight of the day, with Wilbur at the controls, covered 255.6 m (852 ft) in 59 secondsight beginning in 1899. After building and testing three full-sized gliders, the Wrights' first powered airplane flew at Kitty Hawk, North Carolina, on December 17, 1903, making a 12-second flight, traveling 36 m (120 ft), with Orville piloting. The best flight of the day, with Wilbur at the controls, covered 255.6 m (852 ft) in 59 secondsight beginning in 1899. After building and testing three full-sized gliders, the Wrights' first powered airplane flew at Kitty Hawk, North Carolina, on December 17, 1903, making a 12-second flight, traveling 36 m (120 ft), with Orville piloting. The best flight of the day, with Wilbur at the controls, covered 255.6 m (852 ft) in 59 secondsight beginning in 1899. After building and testing three full-sized gliders, the Wrights' first powered airplane flew at Kitty Hawk, North Carolina, on December 17, 1903, making a 12-second flight, traveling 36 m (120 ft), with Orville piloting. The best flight of the day, with Wilbur at the controls, covered 255.6 m (852 ft) in 59 seconds</div>
+            </div>
+            <style>
+                #more{
+                    /* display: none;
+                    opacity: 0;
+                    transition: opacity 1s 2s ease;
+                     */
+                     transition: opacity 1s ease-out;
+                     opacity: 0;
+                     height: 0;
+                     overflow: hidden;
+
+                }
+
+
+            </style>
+
+
+            <button id="read" onclick="myFunction()">Read More</button>
+            <script>
+                function myFunction(){
+                    var moreText = document.getElementById("more");
+                    var buttonText = document.getElementById("read");
+
+                    if (moreText.style.opacity == "0"){
+                        // moreText.style.opacity = "1";
+                        moreText.style.opacity="1";
+                        moreText.style.height="auto";
+                        buttonText.innerHTML="Read Less";
+                    }
+                    else {
+                        buttonText.innerHTML="Read More";
+                        moreText.style.opacity="0";
+                        moreText.style.height="0";
+
+                    }
+                };
+
+
+            </script>
+            <!-- <div class="modal">
+                <input id="modal__trigger" type="checkbox" />
+                <label for="modal__trigger">Read More</label>
+                <div class="modal__overlay">
+                  <div class="modal__wrap">
+                    <label for="modal__trigger">&#10006;</label>
+                    <h2>The Flies of the Smithsonian</h2>
+                    <p> 
+                      By using the data from NMNH Education and Outrach program. The goal of the visualization is to inspire people of all ages to better understand the natural world and our place in it. By focusing on flies (Diptera), I hope to shed light on a species not often explored and looked at. <br><br>
+                      
+                      This visualization is an implementation of Craig Reynold's Boids program to simulate the flocking behavior of birds. 
+
+                    More text 
+
+
+                     <img src="BellX1.jpeg" height="150" width="300" />
+<img src="BellX1.jpeg" height="150" width="300" />
+<img src="BellX1.jpeg" height="150" width="300" />
+        
+        
+                    
+                  </div>
+                </div>
+              </div> -->
 
           </h4>
         </div>
@@ -129,6 +232,35 @@ Air-launched at an altitude of 7,000 meters (23,000 feet) from the bomb bay of a
 <img src="BellX1.jpeg" height="150" width="300" />
 <img src="BellX1.jpeg" height="150" width="300" />
 <img src="BellX1.jpeg" height="150" width="300" />
+
+<!--  Popup Modal test-->
+<!-- 
+<div class="container">
+    <h2>Lorem!</h2>
+    <a href="#" id="linkModal">Link To Modal</a>
+    <p>Test</p>
+    </div>
+
+<div id="modal" class="offmodal">
+    <div class="modal-container">
+        <header>
+            <h2> Modal </h2>
+            <span class="close">
+                <a href="#">X</a>
+            </span>
+        </header>
+        <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nam nobis voluptatum consectetur ullam tempora
+                accusamus illo, corporis dignissimos a delectus. Voluptatem blanditiis officia nobis enim voluptates id autem
+                hic. Quia, explicabo tempore? Officia hic totam soluta? Aut suscipit doloribus illo consectetur voluptate
+                ducimus commodi deleniti quo! Quos saepe dicta, ullam atque numquam, et, nobis consequatur vitae dignissimos
+                nisi repellendus? Blanditiis odit saepe quaerat similique rem veniam quas molestias laudantium praesentium
+                repudiandae adipisci vitae, nulla quae corporis accusantium aut cupiditate ex ipsa qui quo delectus a? Ducimus
+                quos illo quas.</p>
+        </div>
+    </div>
+</div> -->
+<!--  -->
 
               </h4>
             </div>
@@ -421,6 +553,11 @@ Air-launched at an altitude of 7,000 meters (23,000 feet) from the bomb bay of a
                 This spacesuit was worn by astronaut Neil Armstrong, Commander of the Apollo 11 mission, which landed the first man on the Moon on July 20, 1969.
                 The lunar spacesuits were designed to provide a life sustaining environment for the astronaut during periods of extra vehicular activity or during unpressurized spacecraft operation. They permitted maximum mobility and were designed to be worn with relative comfort for up to 115 hours in conjunction with the liquid cooling garment. If necessary, they were also capable of being worn for 14 days in an unpressurized mode.
                 The spacesuit has the designation A-7L, and was constructed in the Extra-vehicular or EV configuration.              </h4>
+
+                
+
+                    <button id="click">Read More!</button>
+                </div>
             </div>
             <div class="heading">
                 
