@@ -134,6 +134,12 @@ img {
 img:hover {
     -webkit-transform:scale(1.5);
     transform:scale(1.5);
+    z-index: 1000;
+}
+model-viewer {
+  background-color: #eee;
+  overflow-x: hidden;
+  --poster-color: #eee;
 }
  
  * {
