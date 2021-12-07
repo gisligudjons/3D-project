@@ -819,3 +819,16 @@ model-viewer {
     font-style: normal;
   }
  
+  #game {
+    display: none;
+    
+}
+
+@media screen and (min-width: 768px) {
+    #game {
+        clear: both;
+        display: block;
+
+        
+    }
+}
