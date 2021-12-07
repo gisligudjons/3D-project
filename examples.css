@@ -127,15 +127,26 @@ font-size: 100;
    text-align: center;
  }
 
-img {
-    transition:transform 0.25s ease;
+
+
+#read7, #read6, #read5, #read4, #read3, #read2, #read {
+  background-color: #0B3D91; 
+	box-shadow: 0px 15px 14px -7px #0B3D91;
+  border: red;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 5%;
+  font-family: Nasalization;
+  text-shadow:0px 1px 0px #3d768a;
+  cursor: pointer;
+  border-radius: 12px;
 }
 
-img:hover {
-    -webkit-transform:scale(1.5);
-    transform:scale(1.5);
-    z-index: 1000;
-}
+
 model-viewer {
   background-color: #eee;
   overflow-x: hidden;
