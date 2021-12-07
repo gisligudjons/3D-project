@@ -352,14 +352,7 @@ model-viewer {
  .demo-title {
    padding: var(--demo-title-padding);
  }
- .demo-title:before {
-   background: #222;
-   height: 2px;
-   width: 40px;
-   content: "";
-   display: block;
-   margin-bottom: 16px;
- }
+
  .demo-title + h4, h4 + h4 {
    margin-top: -24px;
    margin-bottom: 40px;

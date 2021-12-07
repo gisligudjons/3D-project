@@ -9,7 +9,6 @@
     <!-- import the webpage's stylesheet -->
     <link type="text/css" href="examples.css" rel="stylesheet" />
     <link type="text/css" href="docs.css" rel="stylesheet" />
-    <link type="text/css" href="modal.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.typekit.net/njr2dak.css">
     
     
@@ -23,8 +22,13 @@
   crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-    <script src="modal.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.js"></script>
+    <script> 
+      $(function(){
+        $("#game").load("Game/index.html"); 
+      });
+      </script> 
   </head> 
 
 
@@ -32,7 +36,7 @@
 <body>
 
     <div class="examples-container-front">
-        <model-viewer bounds="tight" src="NeilArmstrong (1).glb" ar ar-modes="webxr scene-viewer quick-look" interaction-prompt="none" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="1" auto-rotate disable-zoom=true>
+        <model-viewer bounds="tight" src="NeilArmstrong (1).glb" ar ar-modes="webxr scene-viewer quick-look" interaction-prompt="none" camera-controls environment-image="neutral"  shadow-intensity="1" auto-rotate disable-zoom=true>
          <div id="title"> <h1 id="titleheader">SPACE</h1> 
             <!-- <h4 id="subtitle">By utilizing the 3D objects available through the National Air and Space Musuem, I welcome you to explore air and space, and the history behind each objects.</h4> -->
          <style>
@@ -908,21 +912,32 @@ Another such ship was used by British explorer James Cook in the 1770s during hi
           </div>
         </div>
       </div>
+
   
+        
+             
+              <h4>   <div id="game"></div>
+
+                       
+              
+                
+              
+       
    
+       
     </div> 
 
 
 </div>
 
 
-
-<a href="game.html"><button>Go To Login</button></a>
+<!-- 
+<a href="Game/index.html"><button>Go To Login</button></a>
 
 
 <iframe id='webgl_iframe' frameborder="0" allow="autoplay; fullscreen; vr" allowfullscreen="" allowvr=""
     mozallowfullscreen="true" src="https://play.unity3dusercontent.com/webgl/a1334732-ce93-4dcb-a983-b80f327af660?screenshot=false&embedType=embed"  width="100%"
-    height="15%" onmousewheel="" webkitallowfullscreen="true"></iframe>
+    height="15%" onmousewheel="" webkitallowfullscreen="true"></iframe> -->
 </div>
 
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
