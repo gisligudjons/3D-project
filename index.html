@@ -21,6 +21,8 @@
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.js"></script>
@@ -335,25 +337,13 @@ Testing out the navbar
 
                 <div id="more3"> 
 
-                  <br><br>
-                  The Wrights pioneered many of the basic tenets and techniques of modern aeronautical engineering, such as the use of a wind tunnel and flight testing as design tools. Their seminal accomplishment encompassed not only the breakthrough first flight of an airplane, but also the equally important achievement of establishing the foundation of aeronautical engineering.
-                  <br><br>
-                  <h3>Physical Description</h3>
-                  Physical Description
-                  Canard biplane with one 12-horsepower Wright horizontal four-cylinder engine driving two pusher propellers via sprocket-and-chain transmission system. Non-wheeled, linear skids act as landing gear. Natural fabric finish - no sealant or paint of any kind.
-                  <br><br>
-    
-                  <h3>Alternate Name</h3>
-                  1903 Wright Flyer
-                  <br><br>
-    
-                  <h3>Key Accomplishment(s)</h3>
-                  First Successful Powered Airplane with a Pilot Aboard
-                  <br><br>
-    
-                  <h3>Brief Description</h3>
-                  
-                  Wilbur and Orville Wright spent four years of research and development to create the first successful powered airplane, the 1903 Wright Flyer. It first flew at Kitty Hawk, North Carolina, on December 17, 1903, with Orville at the controls.
+                  <h4>
+  
+                  The Apollo 11 Command Module, "Columbia," was the living quarters for the three-person crew during most of the first crewed lunar landing mission in July 1969. On July 16, 1969, Neil Armstrong, Edwin "Buzz" Aldrin and Michael Collins were launched from Cape Kennedy atop a Saturn V rocket. This Command Module, no. 107, manufactured by North American Rockwell, was one of three parts of the complete Apollo spacecraft. The other two parts were the Service Module and the Lunar Module, nicknamed "Eagle." The Service Module contained the main spacecraft propulsion system and consumables while the Lunar Module was the two-person craft used by Armstrong and Aldrin to descend to the Moon's surface on July 20. The Command Module is the only portion of the spacecraft to return to Earth.
+                </h4>
+                <model-viewer camera-controls
+                alt="A 3D model of an astronaut" src="https://3d-api.si.edu/content/document/3d_package:e7514eea-3f12-490d-a2d0-999f2a1a70f7/apollo-11-command-module-hatch-150k-1024-low.glb">
+            </model-viewer>
     
     
                 </div>
@@ -516,18 +506,20 @@ Testing out the navbar
       <div class="sample">
 
         <div id="glbModel" class="demo">
-            <model-viewer src="https://3d-api.si.edu/content/document/3d_package:d8c63e8a-4ebc-11ea-b77f-2e728ce88125/x3d-cm-interior-hull-uvs-150k-1024-low.glb"   camera-controls alt="A 3D model carousel" id="slider">
+            <model-viewer src="https://3d-api.si.edu/content/document/3d_package:d8c63e8a-4ebc-11ea-b77f-2e728ce88125/x3d-cm-interior-hull-uvs-150k-1024-low.glb" poster="images/Screenshot 2021-12-08 at 23.07.46.png"  camera-controls alt="A 3D model carousel" id="slider">
   
 
                 <div class="slider">
                   <div class="slides">
-                    <button class="slide selected" onclick="switchSrc(this, 'x3d-cm-interior-hull-uvs-150k-1024-low.glb')" style="background-image: url('moon.jpeg');">
-              
-                    </button><button class="slide" onclick="switchSrc(this, 'x3d-cm-interior-seats-uvs-150k-1024-low.glb')" style="background-image: url('moon.jpeg');">
-              
-                    </button><button class="slide" onclick="switchSrc(this, 'x3d-cm-interior-panel-uvs-150k-1024-low.glb')" style="background-image: url('moon.jpeg');">
                     
-                    </button><button class="slide" onclick="switchSrc(this, 'x3d-cm-interior-graffiti-uvs-150k-512-low.glb')" style="background-image: url('moon.jpeg');">
+                    
+                    <button class="slide selected" onclick="switchSrc(this, 'x3d-cm-interior-hull-uvs-150k-1024-low.glb')" style="background-image: url('images/Screenshot 2021-12-08 at 23.07.46.png');">
+              
+                    </button><button class="slide" onclick="switchSrc(this, 'x3d-cm-interior-seats-uvs-150k-1024-low.glb')" style="background-image: url('images/Screenshot 2021-12-08 at 23.07.55.png');">
+              
+                    </button><button class="slide" onclick="switchSrc(this, 'x3d-cm-interior-panel-uvs-150k-1024-low.glb')" style="background-image: url('images/Screenshot 2021-12-08 at 23.08.03.png');">
+                    
+                    </button><button class="slide" onclick="switchSrc(this, 'x3d-cm-interior-graffiti-uvs-150k-512-low.glb')" style="background-image: url('images/Screenshot 2021-12-08 at 23.08.07.png');">
                     
                    
                   </button></div>
@@ -613,19 +605,19 @@ Testing out the navbar
               <h2 class="demo-title">Inside The Apollo 11 Command Module</h2>
               <h4>
 
-                The Apollo 11 Command Module, "Columbia," was the living quarters for the three-person crew during most of the first crewed lunar landing mission in July 1969. On July 16, 1969, Neil Armstrong, Edwin "Buzz" Aldrin and Michael Collins were launched from Cape Kennedy atop a Saturn V rocket. This Command Module, no. 107, manufactured by North American Rockwell, was one of three parts of the complete Apollo spacecraft. The other two parts were the Service Module and the Lunar Module, nicknamed "Eagle." The Service Module contained the main spacecraft propulsion system and consumables while the Lunar Module was the two-person craft used by Armstrong and Aldrin to descend to the Moon's surface on July 20. The Command Module is the only portion of the spacecraft to return to Earth.
+                Astronauts Neil A. Armstrong, Michael Collins and Edwin E. "Buzz" Aldrin Jr., inside the command module of the Apollo 11 Saturn V launch vehicle, rose from Pad 39A at Kennedy Space Center, Florida. The instant of lift-off was 9:32 a.m. EDT, July 16, 1969. The Apollo 11 Command Module Columbia carried astronauts Neil Armstrong, Edwin "Buzz" Aldrin, and Michael Collins on their historic voyage to the Moon and back on July 16-24, 1969. During the mission, astronauts Armstrong and Aldrin became the first human explorers of another world.
               </h4>
             </div>
             <div class="heading">
                 
-                <h2 class="demo-title">The hatch</h2>
+                <!-- <h2 class="demo-title">The hatch</h2>
                 <h4>
   
                   The Apollo 11 Command Module, "Columbia," was the living quarters for the three-person crew during most of the first crewed lunar landing mission in July 1969. On July 16, 1969, Neil Armstrong, Edwin "Buzz" Aldrin and Michael Collins were launched from Cape Kennedy atop a Saturn V rocket. This Command Module, no. 107, manufactured by North American Rockwell, was one of three parts of the complete Apollo spacecraft. The other two parts were the Service Module and the Lunar Module, nicknamed "Eagle." The Service Module contained the main spacecraft propulsion system and consumables while the Lunar Module was the two-person craft used by Armstrong and Aldrin to descend to the Moon's surface on July 20. The Command Module is the only portion of the spacecraft to return to Earth.
                 </h4>
                 <model-viewer camera-controls
                 alt="A 3D model of an astronaut" src="https://3d-api.si.edu/content/document/3d_package:e7514eea-3f12-490d-a2d0-999f2a1a70f7/apollo-11-command-module-hatch-150k-1024-low.glb">
-            </model-viewer>
+            </model-viewer> -->
               </div>
               <template>
               </template>
@@ -762,6 +754,129 @@ Testing out the navbar
                   <br><br>
                   Discovery has earned a place of honor in the collection of national treasures preserved by the Smithsonian National Air and Space Museum. The longest-serving orbiter, Discovery completed more missions than any of its sister ships — spending altogether 365 days in space. Discovery also flew every type of mission during the space shuttle era and has a record of distinctions. Discovery well represents the full scope of human spaceflight in the period 1981-2011.
                   <br><br>
+                  <br>
+                  <div id="my_dataviz">
+                  <svg width="960" height="500"></svg>
+                      <!-- <script src="chart.js"></script> -->
+
+                  <script>
+          const xValue = d => d.Date;
+          const xLabel = 'Date of Launch';
+          const yValue = d => d.Launch;
+          const yLabel = '';
+          const margin = { left: 120, right: 30, top: 20, bottom: 120 };
+    
+          const svg = d3.select('svg');
+          const width = svg.attr('width');
+          const height = svg.attr('height');
+          const innerWidth = width - margin.left - margin.right;
+          const innerHeight = height - margin.top - margin.bottom;
+    
+          const g = svg.append('g')
+              .attr('transform', `translate(${margin.left},${margin.top})`);
+          const xAxisG = g.append('g')
+              .attr('transform', `translate(0, ${innerHeight})`);
+          const yAxisG = g.append('g');
+    
+          xAxisG.append('text')
+              .attr('class', 'axis-label')
+              .attr('x', innerWidth / 2)
+              .attr('y', 100)
+              .text(xLabel);
+    
+          yAxisG.append('text')
+              .attr('class', 'axis-label')
+              .attr('x', -innerHeight / 2)
+              .attr('y', -60)
+              .attr('transform', `rotate(-90)`)
+              .style('text-anchor', 'middle')
+              .text(yLabel);
+
+              var tooltip = d3.select("#my_dataviz")
+              .append("div")
+              .style("opacity", 0)
+              .attr("class", "tooltip")
+              .style("background-color", "white")
+              .style("border", "solid")
+              .style("border-width", "1px")
+              .style("border-radius", "5px")
+              .style("padding", "10px")
+
+
+              var mouseover = function(d) {
+                        tooltip
+                          .style("opacity", 1)
+                      }
+
+                      var mousemove = function(d) {
+                        tooltip
+                          .html(d.Notes)
+                          .style("left", (d3.mouse(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
+                          .style("top", (d3.mouse(this)[1]) + "px")
+                      }
+
+                      // A function that change this tooltip when the leaves a point: just need to set opacity to 0 again
+                      var mouseleave = function(d) {
+                        tooltip
+                          .transition()
+                          .duration(200)
+                          .style("opacity", 0)
+                      }
+
+
+    
+          const xScale = d3.scaleTime();
+          const yScale = d3.scaleLinear();
+    
+          const xAxis = d3.axisBottom()
+            .scale(xScale)
+            .tickPadding(15)
+            .tickSize(-innerHeight);
+    
+          const yAxis = d3.axisLeft()
+            .scale(yScale)
+            .ticks(5)
+            .tickPadding(15)
+            .tickSize(-innerWidth);
+    
+          const row = d => {
+            d.Date = new Date(d.Date);
+            d.Launch = +d.Launch;
+            return d;
+          };
+    
+          d3.csv('launches.csv', row, data => {
+            xScale
+              .domain(d3.extent(data, xValue))
+              .range([0, innerWidth])
+              .nice();
+    
+            yScale
+              .domain(d3.extent(data, yValue))
+              .range([innerHeight, 0])
+              .nice();
+    
+            g.selectAll('circle').data(data)
+              .enter().append('circle')
+                .attr('cx', d => xScale(xValue(d)))
+                .attr('cy', d => yScale(yValue(d)))
+                .attr('fill-opacity', 0.6)
+                .attr('r', 8);
+
+            
+
+    
+            xAxisG.call(xAxis);
+            yAxisG.call(yAxis);
+          });
+        </script> 
+
+
+
+                  
+        
+        </div>
+                  <br>
                   <h3>The Name</h3>
                   The choice of the name "Discovery" carried on a tradition drawn from some historic, Earth-bound exploring ships of the past. One of these sailing forerunners was the vessel used in the early 1600s by Henry Hudson to explore Hudson Bay and search for a northwest passage from the Atlantic to the Pacific.
                   <br>
